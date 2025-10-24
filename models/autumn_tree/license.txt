@@ -1,0 +1,11 @@
+Model Information:
+* title:	Autumn Tree
+* source:	https://sketchfab.com/3d-models/autumn-tree-3f97def3324b41b0be1896c349650cc5
+* author:	IForgetHowToRead (https://sketchfab.com/dirb)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Autumn Tree" (https://sketchfab.com/3d-models/autumn-tree-3f97def3324b41b0be1896c349650cc5) by IForgetHowToRead (https://sketchfab.com/dirb) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
