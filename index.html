@@ -13,12 +13,12 @@
 <script src="https://cdn.jsdelivr.net/npm/aframe-blink-controls/dist/aframe-blink-controls.min.js"></script>
 <script src="script.js"></script>
 </head>
-<a-scene>
+<a-scene xr-mode-ui="enterAREnabled: true; XRMode: xr;" webxr="optionalFeatures:hit-test;" ar-hit-test="target:#floor5;" >
 <a-assets>
-    <a-asset-item id="Tree" src=""></a-asset-item>
+    <a-asset-item id="Tree" src=""</a-asset-item>
 </a-assets>
 
-<a-box></a-box>
+<a-box position= " 0 1 -2" scale= "1 1 1" ></a-box>
 <a-plane static-body  src="#floor5" material="repeat: 10 10; roughness:0.7 " height="50" width="50" rotation="-90 0 0" position="0 0 -4" shadow="receive:true;"></a-plane>
 <a-sky src="#space" color="#7bd3f7"></a-sky>
 </a-scene>
