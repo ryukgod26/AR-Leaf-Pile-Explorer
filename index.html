@@ -14,12 +14,11 @@
 <script src="script.js"></script>
 </head>
 <a-scene xr-mode-ui="enterAREnabled: true; XRMode: xr;" webxr="optionalFeatures:hit-test;" ar-hit-test="target:#Tree;" >
-
+  
 <a-assets>
     <a-asset-item id="TreeModel" src="models/autumn_tree.glb"></a-asset-item>
 </a-assets>
-<a-ring id="reticle" radius-inner="0.05" radius-outer="0.1" color="white rotation="-90 0 0" visible="false">
-    </a-ring>
+<a-ring src="Images/rectile.png"></a-ring>
 <a-box position= " 0 1 -2" color="#FFF" scale= "1 1 1" ></a-box>
 <a-gltf-model src="#TreeModel" id="Tree" position="0 0 -5" rotation="0 0 0" ></a-gltf-model>
   <a-light type="ambient" color="#888"></a-light>
@@ -28,6 +27,5 @@
 <a-sky src="#space" color="#7bd3f7"></a-sky>
 
 </a-scene>
-
 </body>
 </html>
