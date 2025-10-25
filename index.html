@@ -5,26 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AR LEAF PILE EXPLORER</title>
     <meta name="AR LEAF PILE EXPLORER" description="BAsic Explorer Game">
-    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
-    <script src="https://unpkg.com/@c-frame/aframe-physics-system@4.2.2/dist/aframe-physics-system.min.js"></script><script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-particle-system-component@1.2.x/dist/aframe-particle-system-component.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.5.0/dist/aframe-extras.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@fern-solutions/aframe-sky-background/dist/sky-background.umd.min.js"></script>
-<script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/aframe-blink-controls/dist/aframe-blink-controls.min.js"></script>
+ <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+
 <script src="script.js"></script>
 </head>
-<a-scene webxr="optionalFeatures: hit-test;" xr-mode-ui="enterAREnabled: true; XRMode: xr;" webxr="optionalFeatures:hit-test;" ar-hit-test="target:#Tree;" >
-  
-  <a-assets>
-  <a-asset-item id="TreeModel" src="models/autumn_tree.glb"></a-asset-item>
+<a-scene renderer="alpha:true;logarithmicDepthBuffer:true;" webxr="optionalFeatures: hit-test;" xr-mode-ui="enterAREnabled: true; XRMode: ar;"  ar-hit-test="target:#reticle;" >
+
+<a-assets>
+<a-asset-item id="TreeModel" src="models/autumn_tree.glb"></a-asset-item>
 </a-assets>
-<a-ring src="Images/rectile.png"></a-ring>
-<a-gltf-model src="#TreeModel" id="Tree" position="0 0 -5" rotation="0 0 0" ></a-gltf-model>
+<a-ring id="reticle" visible=false rotation="-90 0 0" src="Images/rectile.png"></a-ring>
+<a-gltf-model src="#TreeModel" id="Tree" position="0 0 -5" rotation="0 0 0" visible=false></a-gltf-model>
   <a-light type="ambient" color="#888"></a-light>
   <a-light type="directional" intensity="1" position="-1 2 1"></a-light>
-<a-plane static-body   material="repeat: 10 10; roughness:0.7; " height="50" width="50" rotation="-90 0 0" position="0 0 -4" shadow="receive:true;"></a-plane>
-<a-sky src="#space" color="#7bd3f7"></a-sky>
 
+ 
 </a-scene>
 </body>
 </html>
