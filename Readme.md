@@ -12,20 +12,20 @@ Note: If you ever try to run this Project locally. Then you will have to use a s
 * Html and Javascript
 
 ## Project Structure
-
-|--index.html
-Main Scene (Aframe Scene)
-|--script.js
-Logic for the Select events,sound and Particle System
-|--Readme.md
+.
+|—index.html
+#Main Scene (Aframe Scene)
+|—script.js
+#Logic for the Select events,sound and Particle System
+|—Readme.md
 Contains all the Details about the Project 
 |
-|--models/
- This Folder Contains all the 3d Models Files like for Dinosaur
-|--textures/
-This Folder Contains all the texture Files like for leaf explosion
-|--Images/
-This Folder Contains all the Images File like for reticle
-|--sounds/
-This Folder Contains all the sound files for the Project
+|—models/
+ #This Folder Contains all the 3d Models Files like for Dinosaur
+|—textures/
+#This Folder Contains all the texture Files like for leaf explosion
+|—Images/
+#This Folder Contains all the Images File like for reticle
+|—sounds/
+#This Folder Contains all the sound files for the Project
 
