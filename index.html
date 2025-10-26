@@ -9,17 +9,25 @@
 
 <script src="script.js"></script>
 </head>
-<a-scene renderer="alpha:true;logarithmicDepthBuffer:true;" webxr="optionalFeatures: hit-test;" xr-mode-ui="enterAREnabled: true; XRMode: ar;"  ar-hit-test="target:#reticle;" >
+<a-scene renderer="alpha:true;logarithmicDepthBuffer:true;" webxr="optionalFeatures: hit-test;" xr-mode-ui="enterAREnabled: true; XRMode: ar;" ar-hit-test="target:#reticle;" tap_to_place>
 
 <a-assets>
+<a-asset-item id="DinosaurModel" src="models/dinosaur.glb"> </a-asset-item>
+<a-asset-item id="LeafPileModel" src="models/tree_pile.glb"> </a-asset-item>
 <a-asset-item id="TreeModel" src="models/autumn_tree.glb"></a-asset-item>
 </a-assets>
-<a-ring id="reticle" visible=false rotation="-90 0 0" src="Images/rectile.png"></a-ring>
+
+<a-camera>
+	<a-cursor></a-cursor>
+</a-camera>
+<a-gltf-model id="dinosaur" src="#DinosaurModel" visible="false" > </a-gltf-model>
+
+<a-gltf-model id="leafPile" src="#LeafPileModel" visible="false"></a-gltf-model>
+
+<a-ring id="reticle" visible="false" rotation="-90 0 0" color="white" radius-inner="0.05" radius-outer="0.1"></a-ring>
 <a-gltf-model src="#TreeModel" id="Tree" position="0 0 -5" rotation="0 0 0" visible=false></a-gltf-model>
   <a-light type="ambient" color="#888"></a-light>
   <a-light type="directional" intensity="1" position="-1 2 1"></a-light>
-
- 
 </a-scene>
 </body>
 </html>
