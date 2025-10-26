@@ -12,7 +12,7 @@ Note: If you ever try to run this Project locally. Then you will have to use a s
 * Html and Javascript
 
 ## Project Structure
-
+```
 |—index.html
 #Main Scene (Aframe Scene)
 |—script.js
@@ -28,4 +28,4 @@ Contains all the Details about the Project
 #This Folder Contains all the Images File like for reticle
 |—sounds/
 #This Folder Contains all the sound files for the Project
-
+```
