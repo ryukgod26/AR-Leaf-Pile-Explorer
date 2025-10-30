@@ -2,6 +2,7 @@
 
 ## Description
 
+**Important Note : Please test it on Phone and click AR Button to start the AR View**
 This is a Simple WebAR Project that lets you discover a hidden Dinosaie in the Pile of Leaves which becomes visible when you click on the Pile of Leaves.You can (I only tested this Project on Phone only) try on your phone. Using your Phone you can scan your real world floor and tap on the screen to place a 3D leaf Pile with a Tree and When you click on the Leaf Pile, It Explodes in a satisfying poof of 3D leaves, revealing a dinosaur.
 Note: If you ever try to run this Project locally. Then you will have to use a service like glitch or something else like node live-server with https because if you try to test this Project without https the Phone Browser may not allow access to the Phone Sensors.
 

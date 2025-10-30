@@ -6,7 +6,7 @@
     <title>AR LEAF PILE EXPLORER</title>
     <meta name="AR LEAF PILE EXPLORER" description="BAsic Explorer Game">
  <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
-<script src="https://unpkg.com/aframe-particle-system-component@1.0.10/dist /aframe-particle-system-component.min .js"></script>
+<script src="https://cdn.jsdelivr.net/gh/IdeaSpaceVR/aframe-particle-system-component@1.0.10/dist/aframe-particle-system-component.min.js"></script>
 <script src="script.js"></script>
 </head>
 <a-scene renderer="alpha:true;logarithmicDepthBuffer:true;" webxr="optionalFeatures: hit-test;" xr-mode-ui="enterAREnabled: true; XRMode: ar;" ar-hit-test="target:#reticle;" tap_to_place>
@@ -18,12 +18,13 @@
 <img id="leaf-texture" src="textures/leaf.png">
 <audio id="rustle-sound" src="sounds/rustle.mp3"></audio>
 <audio id="poof-sound" src="sounds/poof.mp3"></audio>
+<img id="reticle_img" src="Images/rectile.png">
 </a-assets>
 
 <a-entity id="leaf-explosion" particle-system="preset:dust; texture:#leaf-texture;color:#694421, #96612F; particleCount:150; size:0.5; maxAge:1.0;enabled:false;"></a-entity>
 
-<a-entity id="rustle" src="#rustle-sound"></a-entity>
-<a-entity id="poof" src="#poof-sound"></a-entity>
+<a-entity id="rustle" sound="src: #rustle-sound"></a-entity>
+<a-entity id="poof" sound="src: #poof-sound"></a-entity>
 
 <!--
 <a-camera>
@@ -33,9 +34,9 @@
 
 <a-gltf-model id="dinosaur" src="#DinosaurModel" visible="false" > </a-gltf-model>
 
-<a-gltf-model id="leafPile" src="#LeafPileModel" visible="false"></a-gltf-model>
+<a-gltf-model id="leafPile" src="#LeafPileModel" visible="false" reveal_dino></a-gltf-model>
 
-<a-ring id="reticle" visible=false rotation="-90 0 0" color="white" radius-inner="0.05" radius-outer="0.1"></a-ring>
+<a-ring id="reticle" material="src= #reticle_img" visible="false" ></a-ring>
 <a-gltf-model src="#TreeModel" id="Tree" position="0 0 -5" rotation="0 0 0" visible=false></a-gltf-model>
   <a-light type="ambient" color="#888"></a-light>
   <a-light type="directional" intensity="1" position="-1 2 1"></a-light>
