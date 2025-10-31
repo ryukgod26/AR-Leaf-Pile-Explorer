@@ -36,8 +36,12 @@
 
 <a-gltf-model id="leafPile" src="#LeafPileModel" visible="false" reveal_dino></a-gltf-model>
 
-<a-ring id="reticle" material="src= #reticle_img" visible="false" ></a-ring>
-<a-gltf-model src="#TreeModel" id="Tree" position="0 0 -5" rotation="0 0 0" visible=false></a-gltf-model>
+<a-ring id="reticle"
+        material="src: #reticle_img; transparent: true; side: double"
+        visible="false"
+        rotation="-90 0 0"
+        scale="0.2 0.2 0.2">
+</a-ring><a-gltf-model src="#TreeModel" id="Tree" position="0 0 -5" rotation="0 0 0" visible=false></a-gltf-model>
   <a-light type="ambient" color="#888"></a-light>
   <a-light type="directional" intensity="1" position="-1 2 1"></a-light>
 </a-scene>
