@@ -28,13 +28,13 @@
 
 
 <a-camera>
-	<a-cursor></a-cursor>
+	<a-cursor raycaster="objects: .clickable"></a-cursor>
 </a-camera>
 
 
 <a-gltf-model id="dinosaur" src="#DinosaurModel" visible="false" > </a-gltf-model>
 
-<a-gltf-model id="leafPile" src="#LeafPileModel" visible="false" reveal_dino></a-gltf-model>
+<a-gltf-model id="leafPile" src="#LeafPileModel" class="clickable" visible="false" reveal_dino></a-gltf-model>
 
 <a-ring id="reticle"
         material="src: #reticle_img; transparent: true; side: double"
