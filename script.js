@@ -33,7 +33,9 @@ AFRAME.registerComponent('reveal_dino',{
     const poofSound = document.querySelector("#poof");
         
     function reveal() {
-
+	if !(leafPile.getAttribute('visible')) {
+	return;
+	}
       const pos = leafPile.getAttribute('position');
 
       if (rustleSound && rustleSound.components && rustleSound.components.sound) {
